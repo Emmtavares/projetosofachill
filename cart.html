@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-title">
+            <img src="imagens/logo 1.PNG" alt="Logo" class="logo-img">
+            <div class="logo-text">SofaChill</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="favorites.html">Favoritos</a></li>
+                <li><a href="cart.html">Carrinho</a></li>
+                <li><a href="login.html" id="login-link">Login</a></li>
+                <li><a href="profile.html" id="profile-link" style="display: none;">Perfil</a></li>
+                <li><a href="#" id="logout-link" onclick="clearstorage()" style="display: none;">Logout</a></li>
+                <li>
+                    <form class="search-form" action="search.html">
+                        <input type="text" name="query" placeholder="Search...">
+                        <button type="submit">Search</button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Cart</h1>
+        <div class="cart-list"></div>
+        <a href="checkout.html" class="btn checkout">Checkout</a>
+    </main>
+    <footer>
+        <div class="map">
+            <p>Estamos aqui:</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.9469584673025!2d-8.658041399999977!3d40.63105170000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd23a2ab04ce07a7%3A0xa36bd9648d0090d9!2sUniversidade%20de%20Aveiro%2C%203810-193!5e0!3m2!1sen!2spt!4v1716799193367!5m2!1sen!2spt"
+                width="600"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <div class="info">
+            <p>Contatos: info@sofachill.pt</p>
+            <p>Telefone: 123 456 789</p>
+        </div>
+    </footer>
+</body>
+</html>
